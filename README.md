@@ -16,3 +16,41 @@ Linux/MacOS:
 ```shell Linux
   foo@bar:~$ gradlew bootRun
 ```
+
+
+## Avaliable Endpoints
+
+
+### Add a student
+
+- __HTTP verb__: POST
+- __URL__: http://\<host>:\<port>/student
+- __Params__:  A json object with the following format:
+    ```Typescript
+       {  
+        "id": number,  
+        "name": string,  
+        "lastName": string,  
+        "address": string,
+        "phone": string,
+        "email": string 
+      }   
+    ```
+- __Success Response__: It returns the same json object that was sent.
+- __Request Example__: 
+
+```shell
+  foo@bar:~$ curl --location --request POST 'http://localhost:9000/student' --header 'Content-Type: application/json' --data-raw '   {
+        "id": 2,
+        "name": "Harry",
+        "lastName": "Potter",
+        "address": "Heredia",
+        "phone": "12345678",
+        "email": "test@magic.com"
+    }   '
+    {"id":2,"name":"Harry","lastName":"Potter","address":"Heredia","phone":"12345678","email":"test@magic.com"}   
+```
+
+
+
+
