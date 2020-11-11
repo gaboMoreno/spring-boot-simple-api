@@ -14,5 +14,5 @@ Windows:
 ```
 Linux/MacOS:
 ```shell Linux
-  foo@bar:~$ whoami gradlew bootRun
+  foo@bar:~$ gradlew bootRun
 ```
