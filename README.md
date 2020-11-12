@@ -23,7 +23,7 @@ Linux/MacOS:
 
 ### 1 - Add a student
 
-- __HTTP verb__: POST
+- __HTTP verb__: Post
 - __URL__: http://\<host>:\<port>/student
 - __Params__:  A json object with the following format:
     ```Typescript
